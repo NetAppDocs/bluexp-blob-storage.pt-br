@@ -1,0 +1,49 @@
+---
+sidebar: sidebar 
+permalink: task-view-azure-blob-storage.html 
+keywords: blob storage, blob working environment, azure blob storage accounts, azure blob working environment 
+summary: Depois de instalar um conetor no Azure, o BlueXP  poderá descobrir automaticamente informações sobre as contas de storage do Azure que residem nas assinaturas do Azure onde o conetor é instalado. Um ambiente de trabalho Blob do Azure é adicionado ao Canvas para que você possa visualizar essas informações. 
+---
+= Veja suas contas de storage do Azure Blob
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+Depois de instalar um conetor no Azure, o BlueXP  poderá descobrir automaticamente informações sobre as contas de storage do Azure que residem nas assinaturas do Azure onde o conetor é instalado. Um ambiente de trabalho Blob do Azure é adicionado ao Canvas para que você possa visualizar essas informações.
+
+Você pode ver detalhes sobre suas contas de armazenamento do Azure, incluindo localização, grupo de recursos, capacidade usada e muito mais. Essas contas podem ser usadas como destinos para backup e recuperação do BlueXP , disposição em camadas do BlueXP  ou operações de cópia e sincronização do BlueXP .
+
+.Passos
+. https://docs.netapp.com/us-en/bluexp-setup-admin/task-quick-start-connector-azure.html["Instale um conetor"^] Na conta do Azure onde você deseja exibir suas contas de storage do Azure Blob.
+. No menu de navegação, selecione *Storage > Canvas*.
++
+Você deve ver automaticamente um ambiente de trabalho do Azure Blob Storage logo após.
+
++
+image:screenshot-azure-blob-we.png["Uma captura de tela de um ambiente de trabalho do Azure Blob Storage."]
+
+. Selecione o ambiente de trabalho e selecione uma ação no painel direito se quiser habilitar os serviços do BlueXP  com seu storage Azure Blob.
++
+image:screenshot-azure-blob-actions.png["Uma captura de tela que mostra o painel ações depois de selecionar um ambiente de trabalho do armazenamento de Blobs do Azure. O painel mostra o número total de contas de armazenamento e uma ação para usar os serviços do BlueXP ."]
+
++
+link:task-blob-enable-data-services.html["Veja quais serviços do BlueXP  estão disponíveis e saiba como usá-los com suas contas de armazenamento de Blobs do Azure"].
+
+. Selecione *entrar em ambiente de trabalho* ou clique duas vezes no ambiente de trabalho para ver detalhes sobre as contas de armazenamento do Azure.
++
+image:screenshot-azure-blob-details.png["Uma captura de tela que mostra os detalhes de um ambiente de trabalho de Blob do Azure: O número total de contas de storage, o número total de locais, grupos de recursos, a capacidade total e muito mais."]
+
++
+Além das colunas que aparecem por padrão, você pode rolar a página para exibir propriedades adicionais para a conta de armazenamento; por exemplo, o número de tags e o tipo de criptografia que foi ativada.
+
+
+
+.O que vem a seguir
+Você pode alterar algumas configurações de conta de armazenamento diretamente do BlueXP  clicando image:button-horizontal-more.gif["os três pontos mais botão"] em para obter uma conta de armazenamento. link:task-change-blob-storage-settings.html["Acesse aqui para obter detalhes"].
+
+Você pode adicionar novos buckets clicando em *Adicionar conta de armazenamento*. link:task-add-blob-storage.html["Acesse aqui para obter detalhes"].

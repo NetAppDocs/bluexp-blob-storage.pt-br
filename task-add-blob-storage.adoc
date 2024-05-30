@@ -1,0 +1,102 @@
+---
+sidebar: sidebar 
+permalink: task-add-blob-storage.html 
+keywords: blob storage, blob working environment, azure blob storage accounts, azure blob working environment, add storage accounts 
+summary: Depois que seu ambiente de trabalho de armazenamento de Blobs do Azure estiver disponível no Canvas, você poderá adicionar contas de armazenamento adicionais diretamente do BlueXP . 
+---
+= Adicione contas de storage Azure Blob
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+Depois que seu ambiente de trabalho de armazenamento de Blobs do Azure estiver disponível no Canvas, você poderá adicionar contas de armazenamento adicionais diretamente do BlueXP .
+
+.Passos
+. No Canvas, clique duas vezes no ambiente de trabalho do armazenamento de Blobs do Azure para exibir a página Visão geral do armazenamento de Blobs do Azure e clique em *Adicionar conta de armazenamento*.
++
+image:screenshot-add-blob-storage-button.png["Uma captura de tela que mostra os detalhes de um ambiente de trabalho de armazenamento de Blobs do Azure e o botão Adicionar conta de armazenamento."]
+
++
+A página _Adicionar conta de armazenamento_ é exibida.
+
++
+image:screenshot-add-blob-storage.png["Uma captura de tela mostrando a página Adicionar conta de armazenamento para que você possa criar suas próprias contas de armazenamento Azure Blob."]
+
+. Insira as informações necessárias na seção _Detalhes do projeto_.
++
+[cols="25,75"]
+|===
+| Campo | Descrição 
+
+
+| Subscrição | Selecione a subscrição do Azure para a nova conta de armazenamento. 
+
+
+| Grupo de recursos  a| 
+Selecione um grupo de recursos existente para esta conta de armazenamento.
+
+https://learn.microsoft.com/en-us/azure/azure-resource-manager/management/manage-resource-groups-portal["Saiba mais sobre os grupos de recursos"^].
+
+|===
+. Na seção _Detalhes da instância_, insira o nome da conta de armazenamento e selecione uma região (ou regiões) onde a conta de armazenamento será criada.
++
+[cols="25,75"]
+|===
+| Campo | Descrição 
+
+
+| Nome da conta de armazenamento | Introduza o nome que pretende utilizar para a conta de armazenamento. O nome deve ter entre 3 e 24 carateres e pode conter apenas números e letras minúsculas. 
+
+
+| Região do Azure  a| 
+Selecione uma região na lista onde a conta de armazenamento será criada.
+
+Selecione a região apropriada para sua conta de armazenamento. https://learn.microsoft.com/en-us/azure/availability-zones/az-overview["Consulte a documentação da Microsoft para obter informações sobre regiões do Azure e zonas de disponibilidade"^].
+
+Nem todas as regiões são compatíveis com todos os tipos de contas de armazenamento ou configurações de redundância. https://learn.microsoft.com/en-us/azure/storage/common/storage-redundancy["Consulte a documentação da Microsoft para obter informações sobre a redundância de armazenamento do Azure"^].
+
+Além disso, a escolha da região pode ter um impactos na cobrança. https://learn.microsoft.com/en-us/azure/storage/common/storage-account-overview#storage-account-billing["Consulte a documentação da Microsoft para obter informações sobre o faturamento da conta do Azure Storage"^].
+
+
+
+| Tipo de desempenho  a| 
+Selecione se deseja usar o armazenamento de desempenho *Standard* ou *Premium*. https://learn.microsoft.com/en-us/azure/storage/common/storage-account-overview#types-of-storage-accounts["Consulte a documentação da Microsoft para obter informações sobre tipos de contas de armazenamento"^].
+
+** O desempenho _Standard_ é usado para contas de armazenamento v2 de uso geral. Este tipo de conta é recomendado para a maioria dos cenários.
+** O desempenho _Premium_ é usado para cenários que exigem baixa latência. Existem três tipos de contas de armazenamento premium disponíveis: Blobs de bloco, compartilhamentos de arquivos e blobs de página.
+
+
+|===
+. Na seção _Tags_, você pode inserir até 10 pares de chave/valor de tag para agrupar seus recursos.
++
+As tags são metadados que você pode usar para agrupar recursos para identificar aplicativos, ambientes, regiões, provedores de nuvem e muito mais. Você pode adicionar tags a uma conta de armazenamento para que as tags sejam aplicadas a objetos quando forem adicionadas à conta de armazenamento.
+
++
+As tags são desativadas por padrão em novas contas de armazenamento criadas pelo BlueXP . https://learn.microsoft.com/en-us/azure/storage/blobs/storage-manage-find-blobs["Saiba mais sobre marcação na documentação da Microsoft"^].
+
+. Na seção _Encryption_, escolha o tipo de criptografia de dados que deseja usar para proteger o acesso aos dados na conta de armazenamento.
++
+[cols="25,75"]
+|===
+| Tipo de criptografia de dados | Descrição 
+
+
+| Chaves gerenciadas pela Microsoft | Por padrão, as chaves de criptografia gerenciadas pela Microsoft são usadas para criptografar seus dados. 
+
+
+| Chaves gerenciadas pelo cliente  a| 
+Você pode usar suas próprias chaves gerenciadas pelo cliente para criptografia de dados em vez de usar as chaves de criptografia gerenciadas pela Microsoft padrão. Se você está planejando usar suas próprias chaves gerenciadas pelo cliente, precisará criá-las já para que você possa selecionar o Cofre de chaves e as chaves nesta página.
+
+As chaves podem estar na mesma assinatura que a conta de armazenamento, ou você pode selecionar uma assinatura diferente.
+
+|===
++
+Consulte a documentação do Microsoft Azure para https://learn.microsoft.com/en-us/azure/storage/common/storage-service-encryption["Mais informações sobre chaves gerenciadas pela Microsoft"^], e https://learn.microsoft.com/en-us/azure/storage/common/customer-managed-keys-overview["Mais informações sobre chaves gerenciadas pelo cliente"^].
+
+. Clique em *Add* e o bucket é criado.
+

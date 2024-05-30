@@ -1,0 +1,86 @@
+---
+sidebar: sidebar 
+permalink: task-change-blob-storage-settings.html 
+keywords: blob storage, blob working environment, azure blob storage accounts, azure blob working environment 
+summary: Depois que o ambiente de trabalho do armazenamento de Blobs do Azure estiver disponível no Canvas, você poderá alterar algumas propriedades da conta de armazenamento diretamente do BlueXP . 
+---
+= Altere as configurações da conta de armazenamento Azure Blob
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+Depois que o ambiente de trabalho do armazenamento de Blobs do Azure estiver disponível no Canvas, você poderá alterar algumas propriedades da conta de armazenamento diretamente do BlueXP .
+
+Observe que não é possível alterar o nome da conta de armazenamento, a região do Azure ou o tipo de desempenho do armazenamento.
+
+As propriedades da conta de armazenamento que você pode alterar incluem:
+
+* A assinatura e o Grupo de recursos da conta de armazenamento.
+* Adicione, altere ou remova tags para os objetos que são adicionados à conta de armazenamento.
+* Se novos objetos adicionados ou não à conta de armazenamento são criptografados e a opção usada para criptografia.
+
+
+Você pode alterar essas configurações de conta de armazenamento diretamente do BlueXP  clicando image:button-horizontal-more.gif["os três pontos mais botão"] em para obter uma conta de armazenamento.
+
+image:screenshot-edit-azure-blob-storage.png["Uma captura de tela mostrando como editar as propriedades da conta de armazenamento do BlueXP ."]
+
+
+
+== Altere os detalhes do projeto
+
+Na seção _Detalhes do projeto_, você pode alterar a assinatura e o grupo recursos da conta de armazenamento.
+
+[cols="25,75"]
+|===
+| Campo | Descrição 
+
+
+| Subscrição | Selecione uma assinatura diferente do Azure para a conta de armazenamento. 
+
+
+| Grupo de recursos  a| 
+Selecione um grupo de recursos diferente para a conta de armazenamento.
+
+https://learn.microsoft.com/en-us/azure/azure-resource-manager/management/manage-resource-groups-portal["Saiba mais sobre os grupos de recursos"^].
+
+|===
+Clique em *Salvar* para salvar as alterações na conta de armazenamento.
+
+
+
+== Adicione ou altere tags para objetos na conta de armazenamento
+
+Na seção _Tags_, você pode adicionar até 10 pares de chave/valor de tag, ou você pode alterar ou excluir um par de chave/valor de tag. As tags são aplicadas a objetos quando são adicionadas à conta de armazenamento. Se você quiser adicionar mais tags, clique em *Adicionar nova tag*.
+
+https://learn.microsoft.com/en-us/azure/storage/blobs/storage-manage-find-blobs["Saiba mais sobre marcação na documentação da Microsoft"^].
+
+Clique em *Salvar* para salvar as alterações na conta de armazenamento.
+
+
+
+== Altere a configuração de criptografia
+
+Na seção _Encryption_, você pode alterar o tipo de criptografia de dados que deseja usar para proteger o acesso aos dados em suas contas de armazenamento.
+
+[cols="25,75"]
+|===
+| Tipo de criptografia de dados | Descrição 
+
+
+| Chaves gerenciadas pela Microsoft | Por padrão, as chaves de criptografia gerenciadas pela Microsoft são usadas para criptografar seus dados. 
+
+
+| Chaves gerenciadas pelo cliente  a| 
+Você pode usar suas próprias chaves gerenciadas pelo cliente para criptografia de dados em vez de usar as chaves de criptografia gerenciadas pela Microsoft padrão. Se você está planejando usar suas próprias chaves gerenciadas pelo cliente, precisará criá-las já para que você possa selecionar o Cofre de chaves e as chaves nesta página.
+
+As chaves podem estar na mesma assinatura que a conta de armazenamento, ou você pode selecionar uma assinatura diferente.
+
+|===
+Consulte a documentação do Microsoft Azure para https://learn.microsoft.com/en-us/azure/storage/common/storage-service-encryption["Mais informações sobre chaves gerenciadas pela Microsoft"^], e https://learn.microsoft.com/en-us/azure/storage/common/customer-managed-keys-overview["Mais informações sobre chaves gerenciadas pelo cliente"^].
+
+Clique em *Salvar* para salvar as alterações na conta de armazenamento.

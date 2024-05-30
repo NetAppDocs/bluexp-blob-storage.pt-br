@@ -1,0 +1,31 @@
+---
+indexpage:
+  title: Documentação de storage do Azure Blob
+  summary: Comece a usar o storage de Blobs do Azure com seu sistema BlueXP .
+  keywords: bluexp, documentation, storage, azure blob storage
+  lead: Comece a usar o storage de Blobs do Azure com seu sistema BlueXP .
+  tiles:
+  - title: Comece agora
+    links:
+    - title: Veja suas contas de storage do Azure Blob
+      url: task-view-azure-blob-storage.html
+  - title: Gerenciar contas de storage do Azure Blob
+    links:
+    - title: Adicionar contas de armazenamento Blob
+      url: task-add-blob-storage.html
+    - title: Alterar as definições da conta de armazenamento
+      url: task-change-blob-storage-settings.html
+    - title: Use os serviços de dados do NetApp com o storage Blob do Azure
+      url: task-blob-enable-data-services.html
+  - title: Mais informações
+    links:
+    - title: Documentação de storage do Azure Blob para gerenciamento fora do BlueXP 
+      url: https://learn.microsoft.com/en-us/azure/storage/blobs/storage-blobs-introduction
+  - title: Blogs & comunidade
+    links:
+    - title: Comunidade NetApp
+      url: https://community.netapp.com/t5/BlueXP-and-Services/ct-p/CDS
+    - title: BlueXP  blog
+      url: https://bluexp.netapp.com/blog/topic/cloud-manager
+    - title: Webinars da BlueXP 
+      url: https://bluexp.netapp.com/events
