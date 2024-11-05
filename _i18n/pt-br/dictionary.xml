@@ -290,7 +290,6 @@
   <block id="3bec690d07df1a3a36c8a3122654fc24" category="section-title">5 de junho de 2023</block>
   <block id="f9037e3eb23130835367334e3aa5a34b" category="section-title">Capacidade de adicionar novas contas de storage do BlueXP </block>
   <block id="a39e8d6ee8bc43ef75656b419fe7a86e" category="inline-link">Veja como adicionar novas contas de armazenamento Azure Blob</block>
-  <block id="34738f8a469a7971575b53ff1435539f" category="paragraph">Você já teve a capacidade de visualizar o armazenamento de Blobs do Azure no BlueXP  Canvas por algum tempo. Agora você pode adicionar novas contas de armazenamento e alterar propriedades para contas de armazenamento existentes diretamente do BlueXP .<block ref="7f415337c5df45cbb7bfeb019667a476" category="inline-link-rx"></block>.</block>
   <block id="390778421c105428ef0687f3130c3d73" category="sidebar">Comece a usar o storage de Blobs do Azure com seu sistema BlueXP .</block>
   <block id="3248c863cc0fef1b82096d4ead258a65" category="sidebar">Documentação de storage do Azure Blob</block>
   <block id="be11c74c1dd7f307bb80183a90dc2067" category="sidebar">Comece agora</block>
@@ -308,4 +307,5 @@
   <block id="baf9c0d022fa9e7a85fa77eeb954adbd" category="sidebar">Adicionar novas contas de armazenamento</block>
   <block id="0143afd4b3b57a4efca22155b835b7f2" category="sidebar">Altere as configurações de contas de armazenamento</block>
   <block id="0adc03eac86772ad2c75c8f140be417e" category="sidebar">Conhecimento e apoio</block>
+  <block id="3e9d2d36df8c91d7e9151cc5775042a8" category="paragraph">Você já teve a capacidade de visualizar o armazenamento de Blobs do Azure no BlueXP  Canvas por algum tempo. Agora você pode adicionar novas contas de armazenamento e alterar propriedades para contas de armazenamento existentes diretamente do BlueXP .<block ref="432ae671c636de993f8b5290b51ad53f" category="inline-link-rx"></block>.</block>
 </blocks>
